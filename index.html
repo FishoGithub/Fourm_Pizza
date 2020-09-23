@@ -6,6 +6,7 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <div class='intro'>
       <h1>Papa Bohns Pizza</h1>
@@ -13,13 +14,42 @@
         <h2>totally not papa johns with a different name!</h2>
       </div>
     </div>
-    <div>
-      <h4>Pizza Size</h4>
-      <div>Small, Medium, Large</div>
-      <input class='size-input' type='range' value='small', min='small' max='large' step='1'></input>
+    <br>
+    <div class = 'panels'>
+      <div class = 'pizza-size'>
+        <h4>Pizza Size</h4>
+        <div>Small, Medium, Large</div>
+        <input id='size-input' type='range' value='1' min='1' max='3' step='1'></input>
+      </div>
+      <br>
+      <div class = 'crust'>
+        <h4>Pizza Crust</h4>
+        <select id="pizza-crust">
+          <option value='regular'>Regular</option>
+          <option value = 'thin'>Thin</option>
+          <option value='stuffed-crust'>Stuffed Crust</option>
+        </select>
+      </div>
+      <br>
+      <div class='toppings'>
+        <h4>Toppings</h4>
+
+        <input type='checkbox' name='toppings-options' value="canadian bacon">Canadian Bacon</input> <input type='checkbox' name='toppings-options'value="bacon"> Bacon</input> <input type='checkbox' name='toppings-options' value="pepperoni">Pepperoni</input> <input type='checkbox' name='toppings-options' value="peppers">Peppers</input> <input type='checkbox' name='toppings-options'value="meatballs">Meatballs</input> <input type='checkbox' name='toppings-options' value="none">None (plain cheese)</input>
+
+      </div>
+    <br>
+    <br>
+    <button onclick="onSubmit()">Test Button yay</button>
+
+      <div class = 'submit-button'>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="submitted()">Order</button>
+      </div>
     </div>
 
-    <button onclick=""></button>
     <script src="script.js"></script>
   </body>
 </html>
