@@ -12,13 +12,14 @@
       <h1>Papa Bohns Pizza</h1>
       <div class='inner-intro'>
         <h2>totally not papa johns with a different name!</h2>
+        <br>
       </div>
     </div>
     <br>
     <div class = 'panels'>
       <div class = 'pizza-size'>
         <h4>Pizza Size</h4>
-        <div>Small, Medium, Large</div>
+        <div class = 'smol'>Small, Medium, Large</div>
         <input id='size-input' type='range' value='1' min='1' max='3' step='1'></input>
       </div>
       <br>
@@ -37,6 +38,13 @@
         <input type='checkbox' name='toppings-options' value="canadian bacon">Canadian Bacon</input> <input type='checkbox' name='toppings-options'value="bacon"> Bacon</input> <input type='checkbox' name='toppings-options' value="pepperoni">Pepperoni</input> <input type='checkbox' name='toppings-options' value="peppers">Peppers</input> <input type='checkbox' name='toppings-options'value="meatballs">Meatballs</input> <input type='checkbox' name='toppings-options' value="none">None (plain cheese)</input>
 
       </div>
+
+    <div class = 'zip-code'>
+      <h4>Zip Code</h4>
+      <h5>Has to Be 98052</h5>
+      <input id='zip' type = 'text'></input>
+    </div>
+
     <br>
     <br>
     <button onclick="onSubmit()">Test Button yay</button>

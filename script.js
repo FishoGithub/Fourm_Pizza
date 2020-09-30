@@ -1,14 +1,22 @@
-let crust = document.getElementById('pizza-crust');
-let crust = document.getElementById('size-input');
+let toppers = document.getElementsByName('toppings-options')
 
 function onSubmit() {
-  let toppings = document.getElementsByName('toppings');
-  alert(toppings.value);
+  let zipcode = document.getElementById('zip')
+  console.log(zipcode.value);
 
-  toppings.forEach(node=> console.log(node.checked))
-
-  for (let i = 0; i<toppings.length; i++) {
-    if(toppings[i].checked)
-    console.log(toppings[i].value)
+  if(zipcode === '98052') {
+    console.log('correct');
+  }
+  else if (zipcode === !'98052') {
+    console.log('no')
   }
 }
+
+function checkBoxes() {
+  for(var i = 0; i<toppers.length; i++) {
+    if(toppers[i].checked) {
+      console.log(toppers[i].value);
+    }
+  }
+}
+
