@@ -14,7 +14,9 @@ body {
   background-color: yellow;
 }
 
-.pizza-size {
+.pizza-size { 
+  margin-left: 30px;
+  margin-right: 30px;
   border-top: 20px;
   border-bottom: 20px;
   border-left: 20px;
@@ -98,3 +100,6 @@ select {
 .smol {
   font-size: 18px;
 }
+
+margin-left: 30px;
+margin-right: 30px;
